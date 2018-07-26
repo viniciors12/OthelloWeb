@@ -1,0 +1,12 @@
+
+
+
+<table class="Container" border=”1px” bgcolor="#00FF00">
+    {% for x in range(size) %}
+        <tr class="row">
+            {% for y in range(size) %}
+                <td class="col"> {{matriz[x][y].getColor()}} </td>
+    {% endfor %}
+        </tr>
+        {% endfor %}
+</table>

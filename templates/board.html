@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Python Flask Bucket List App</title>
+
+    <script src="../static/js/jquery-3.3.1.js"></script>
+    <script src="../static/js/app.js"></script>
+
+
+</head>
+<body>
+
+<div id="boardCont">
+<table class="Container" border=”1px” bgcolor="#00FF00">
+    {% for x in range(size) %}
+        <tr class="row">
+            {% for y in range(size) %}
+                <td class="col"> {{matriz[x][y].getColor()}} </td>
+    {% endfor %}
+        </tr>
+        {% endfor %}
+</table>
+</div>
+
+<p><label>Jugador 1:</label> <span id="player1">{{ play1 }}</span></p>
+<p><label>Jugador 2:</label> <span id="player2">{{ play2 }}</span></p>
+
+<p><label>Movimiento del jugador 1:</label> <span id="player1Movs">{{ play1Mov }}</span></p>
+<p><label>Movimiento del jugador 2:</label> <span id="player2Movs">{{ play2Mov }}</span></p>
+
+<a href="/" >Jugar de nuevo!</a>
+
+</body>
+</html>

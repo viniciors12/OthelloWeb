@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+{% if puntitos[0] > puntitos[1] %}
+    <p><label>El ganador es:</label> <span id="winner1"> {{blanquito}} </span></p>
+
+{% elif puntitos[0] < puntitos[1] %}
+    <p><label>El ganador es:</label> <span id="winner2"> {{negrito}} </span></p>
+
+{% else %}
+    <p><label>El ganador es:</label> <span id="winner3"> Es una empate! </span></p>
+
+{% endif %}
+
+
+
+<p><label>Puntos Negros:</label> <span id="puntos"> {{puntitos[0]}} </span></p>
+<p><label>Puntos Blancos:</label> <span id="puntos2"> {{puntitos[1]}} </span></p>
+
+
+
+ <a href="/" >Jugar de nuevo!</a>
+
+<body>
+
+</body>
+</html>
